@@ -1,0 +1,67 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .header-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 7vw;
+
+        }
+
+        .penel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-left: 2vw;
+            width: 100%;
+            height: 90vh;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            overflow: hidden;
+            border-radius: 7vw;
+            cursor: pointer;
+            transition: all .8s ease-out;
+        }
+
+        .penel:nth-child(1) {
+            margin-left: 0;
+        }
+
+        .active {
+            width: 700em;
+            /* flex: 5; */
+        }
+
+        /* .penel>img {
+            height: auto;
+            width: auto;
+        } */
+
+        .penel p {
+            position: absolute;
+            bottom: 5vh;
+            left: 2vw;
+            opacity: 0;
+            font-weight: 800;
+            font-size: 24px;
+            color: white;
+        }
+
+        .panel.active {
+            flex: 5;
+        }
+
+        .penel.active p {
+            opacity: 1;
+            transition: all 1.3s ease-out;
+        }
